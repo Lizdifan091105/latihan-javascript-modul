@@ -9,20 +9,20 @@
     <script>
         let  x = prompt ('Masukan Angka pertama (0-100)')
         document.write( `<p> Nilai pertama  : ${x}</p>`)
-        let  r = parseFloat(prompt ('Masukan Angka terakhir(0-100)'))
-        document.write( `<p> Nilai kedua  : ${r}</p>`)
+        let  f = parseFloat(prompt ('Masukan Angka terakhir(0-100)'))
+        document.write( `<p> Nilai kedua  : ${f}</p>`)
 
-        if(x<r){
+        if(x<f){
             let h = parseFloat(x)
-            for (h; h<(r+1); h++){
-             if( h ==101) 
+            for (h; h<(f+1); h++){
+            if( h ==101) 
             break;
         //outputnya akan terbatas sampai 1oo walaupun di input lebih dari 100
         document.write( `<p>  ${h}</p>`)
 
             }
         }
-        else if(x>r){
+        else if(x>f){
             document.write( `<p> Data yang ditampilkan hanya adalah nilai dari terkecil ke terbesar</p>`)
             document.write( `<p> Mohon Input dengan nilai pertama terkecil dan input nilai terakhir adalah nilai terbesar (0-100)</p>`)
 
